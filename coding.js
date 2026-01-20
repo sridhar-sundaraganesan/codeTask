@@ -1,27 +1,27 @@
-// // // 🔹 Challenge 1: Reverse Words in a Sentence
-// // // Problem:
-// // // Write a function that takes a sentence and
-// // // reverses the order of the words, but not the characters.
+// 🔹 Challenge 1: Reverse Words in a Sentence
+// Problem:
+// Write a function that takes a sentence and
+// reverses the order of the words, but not the characters
 
-// // // Example:
+Example:
 
-// // // Input: "I love coding"
+Input: "I love coding"
 
-// // // Output: "coding love I"
+Output: "coding love I"
 
 
-// // function reverseSentence(string) {
-// //   const words = string.split(' ')
-// //   console.log(words.length);
-// //   let arr = []
+function reverseSentence(string) {
+  const words = string.split(' ')
+  console.log(words.length);
+  let arr = []
 
-// //   for (let i = words.length - 1; i >= 0; i--) {
-// //     arr.push(words[i])
-// //   }
+  for (let i = words.length - 1; i >= 0; i--) {
+    arr.push(words[i])
+  }
 
-// //   console.log(arr.join(' '));
+  console.log(arr.join(' '));
 
-// // }
+}
 
 // // reverseSentence('I love javascript and python')
 
@@ -91,64 +91,62 @@
 
 
 
-// // // Challenge 2: Find the First Non - Repeating Character
-// // // Problem:
-// // // Given a string, return the first character that does not repeat.If all characters repeat, return null.
+// Challenge 2: Find the First Non - Repeating Character
+// Problem:
+// Given a string, return the first character that does not repeat.If all characters repeat, return null.
 
-// // //   Example:
+//   Example:
 
-// // // Input: "swiss"
+// Input: "swiss"
 
-// // // Output: "w"
+// Output: "w"
 
-// // // 🔹 Challenge 3: Two Sum
-// // // Problem:
-// // // Given an array of numbers and a target sum
-// // // , return the indices of the two numbers that add up to the target.
+// 🔹 Challenge 3: Two Sum
+// Problem:
+// Given an array of numbers and a target sum
+// , return the indices of the two numbers that add up to the target.
 
-// // //   Example:
+//   Example:
 
-// // // Input: [2, 7, 11, 15], target = 9
+// Input: [2, 7, 11, 15], target = 9
 
-// // // Output: [0, 1](because 2 + 7 = 9)
-
-
-// // function twoSum(arr, target) {
-// //   let sum = 0;
-// //   let res = [];
-// //   for (let i = 0; i < arr.length; i++) {
-// //     sum += arr[i]
-// //     res.push(i)
-// //     if (sum == target) {
-// //       return res
-// //     }
-
-// //   }
-// // }
-
-// // console.log(twoSum([2, 7, 10, 15], 19));
+// Output: [0, 1](because 2 + 7 = 9)
 
 
+function twoSum(arr, target) {
+  let sum = 0;
+  let res = [];
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i]
+    res.push(i)
+    if (sum == target) {
+      return res
+    }
+
+  }
+}
+
+console.log(twoSum([2, 7, 10, 15], 19));
 
 
-// function missingNumber(arr) {
-//   let sort = arr.sort((a, b) => a - b);
-
-//   let res = [];
-//   for (let i = 0; i < sort.length; i++) {
-//     if
-//   }
-// }
-
-// console.log(missingNumber([0, 1, 2, 4, 5]))
-// console.log(missingNumber([1, 2, 5, 3]))
 
 
-// // const arr1 = [1, 2, 5, 3]
+function missingNumber(arr) {
+  let sort = arr.sort((a, b) => a - b);
 
-// // console.log(arr1.sort((a, b) => a - b))
+  let res = [];
+  for (let i = 0; i < sort.length; i++) {
+    if
+  }
+}
+
+console.log(missingNumber([0, 1, 2, 4, 5]))
+console.log(missingNumber([1, 2, 5, 3]))
 
 
+// const arr1 = [1, 2, 5, 3]
+
+// console.log(arr1.sort((a, b) => a - b))
 
 
 
@@ -164,40 +162,42 @@
 
 
 
-// // function anagram(str1, str2) {
-// //   const num = str1.split('').map(char => char.charCodeAt(0) - 96).sort((a, b) => a - b)
-// //   const num2 = str2.split('').map(char => char.charCodeAt(0) - 96).sort((a, b) => a - b)
-
-// //   const res = arraysEquals(num, num2)
-// //   if (res) {
-// //     console.log('Anagram')
-// //   } else {
-// //     console.log('Not anagram');
-// //   }
-// // }
-
-// // function arraysEquals(arr1, arr2) {
-// //   return arr1.length === arr2.length && arr1.every((val, i) => val === arr2[i])
-// // }
-// // anagram('hello', 'worlds')
-// // anagram('listen', 'silent')
-
-// // const str1 = 'listen'
-// // const str2 = 'silent'
-
-// // const num = str1.split('').map(char => char.charCodeAt(0) - 96).sort((a, b) => a - b)
-// // const num3 = str2.split('').map(char => char.charCodeAt(0) - 96).sort((a, b) => a - b)
-
-// // const sort = num.sort((a, b) => a - b)
-// // const sort2 = num3.sort((a, b) => a - b)
-
-// // console.log(sort);
-// // console.log(sort2);
 
 
-// // function arraysEqual(arr1, arr2) {
-// //   return arr1.length === arr2.length && arr1.every((val, i) => val === arr2[i])
-// // }
+function anagram(str1, str2) {
+  const num = str1.split('').map(char => char.charCodeAt(0) - 96).sort((a, b) => a - b)
+  const num2 = str2.split('').map(char => char.charCodeAt(0) - 96).sort((a, b) => a - b)
 
-// // console.log(arraysEqual(sort, sort2));
-// // arraysEqual(sort, sort2)
+  const res = arraysEquals(num, num2)
+  if (res) {
+    console.log('Anagram')
+  } else {
+    console.log('Not anagram');
+  }
+}
+
+function arraysEquals(arr1, arr2) {
+  return arr1.length === arr2.length && arr1.every((val, i) => val === arr2[i])
+}
+anagram('hello', 'worlds')
+anagram('listen', 'silent')
+
+const str1 = 'listen'
+const str2 = 'silent'
+
+const num = str1.split('').map(char => char.charCodeAt(0) - 96).sort((a, b) => a - b)
+const num3 = str2.split('').map(char => char.charCodeAt(0) - 96).sort((a, b) => a - b)
+
+const sort = num.sort((a, b) => a - b)
+const sort2 = num3.sort((a, b) => a - b)
+
+console.log(sort);
+console.log(sort2);
+
+
+function arraysEqual(arr1, arr2) {
+  return arr1.length === arr2.length && arr1.every((val, i) => val === arr2[i])
+}
+
+console.log(arraysEqual(sort, sort2));
+arraysEqual(sort, sort2)
