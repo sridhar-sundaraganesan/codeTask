@@ -23,3 +23,6 @@ function add(num1, num2) {
 
 console.log(add(16, 18))
 console.log(add(4999, 4999))
+
+
+console.log('Splitting the array')

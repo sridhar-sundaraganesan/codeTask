@@ -131,14 +131,14 @@ console.log(twoSum([2, 7, 10, 15], 19));
 
 
 
-function missingNumber(arr) {
-  let sort = arr.sort((a, b) => a - b);
+// function missingNumber(arr) {
+//   let sort = arr.sort((a, b) => a - b);
 
-  let res = [];
-  for (let i = 0; i < sort.length; i++) {
-    if
-  }
-}
+//   let res = [];
+//   for (let i = 0; i < sort.length; i++) {
+//     if
+//   }
+// }
 
 console.log(missingNumber([0, 1, 2, 4, 5]))
 console.log(missingNumber([1, 2, 5, 3]))
