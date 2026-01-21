@@ -1,6 +1,6 @@
 const person = {
-  name: 'Janani',
-  age: 25,
+  name: 'Janani Prabhuvasan',
+  age: 28,
   phoneNumber: 7305835567
 }
 
@@ -18,7 +18,7 @@ const { name, age } = person
 console.log(name, age);
 
 
-const hobbies = ['Driving', 'Studying']
+const hobbies = ['Driving', 'Studying', 'Movies']
 
 const [hobb1, hobb2] = hobbies;
 
